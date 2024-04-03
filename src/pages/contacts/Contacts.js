@@ -1,7 +1,7 @@
-function Contact() {
+function Contacts() {
     return (
-        <div>hello</div>
+        <div>contacts email, phone number</div>
     );
 }
 
-export default Contact;
+export default Contacts
