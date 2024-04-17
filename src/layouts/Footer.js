@@ -1,10 +1,6 @@
 function Footer() {
     return (
-        <div>
-            Footer
-            contacts
-            all rights reserved
-        </div>
+        <footer></footer>
     );
 }
 
