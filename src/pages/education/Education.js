@@ -47,20 +47,19 @@ function Education() {
         ],
     }
 
-
     return (
         <div>
-            <h1>Education</h1>
+            <h1 className="flex justify-center">EDUCATION</h1>
             <Program education={education}/>
-            <h1>Courseworks</h1>
+            <h1 className="flex justify-center">COURSEWORKS</h1>
             <div>
-                <div>
+                <div className="flex justify-center">
                     <Coursework title="Software" courses={coursework.information_and_intelligent_systems} />
                     <Coursework title="Information and Intelligent Systems" courses={coursework.information_and_intelligent_systems} />
                     <Coursework title="Algorithm and Theory" courses={coursework.information_and_intelligent_systems} />
                     <Coursework title="Systems" courses={coursework.information_and_intelligent_systems} />
                 </div>
-                <div>
+                <div className="flex justify-center">
                     <Coursework title="Mathematics" courses={coursework.mathematics} />
                     <Coursework title="Statistics" courses={coursework.statistics} />
                     <Coursework title="Electrical Engineering" courses={coursework.electrical_engineering} />
@@ -72,16 +71,19 @@ function Education() {
 
 function Program(props) {
     const education = props.education;
-
+    // className="block max-w-sm p-6 border border-gray-200 rounded-lg shadow"
+    
     return (
-        <div>
-            {education.map((index) => (
-                <div key={index.id}>
-                    <h2>{index.institution}</h2>
-                    <h3>{index.degree}</h3>
-                    <h3>{index.period}</h3>
-                </div>
-            ))}
+        <div className="flex justify-center p-6 border border-gray-200 rounded-lg shadow">
+            <div>
+                {education.map((index) => (
+                    <div key={index.id}>
+                        <h2>{index.institution}</h2>
+                        <h3>{index.degree}</h3>
+                        <h3>{index.period}</h3>
+                    </div>
+                ))}
+            </div>
         </div>
     );
 }
@@ -91,7 +93,7 @@ function Coursework(props) {
     const courses = props.courses;
 
     return (
-        <div>
+        <div className="block">
             <h2>{title}</h2>
             {courses.map((course) => (
                 <div key={course.id}>

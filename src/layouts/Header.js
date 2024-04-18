@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom';
 
 function Header() {
     return (
-        <header>
-            <h2>Jaejin</h2>
-            <ul>
+        <header className='flex justify-between'>
+            <Link to='/'>Jaejin</Link>
+            <ul className='flex justify-end space-x-3'>
                 <li><Link to='/'>Home</Link></li>
                 <li><Link to='/about-me'>About Me</Link></li>
                 <li><Link to='/education'>Education</Link></li>
