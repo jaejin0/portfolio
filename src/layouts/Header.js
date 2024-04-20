@@ -4,7 +4,7 @@ function Header() {
     return (
         <header className='flex justify-between'>
             <Link to='/'>Jaejin</Link>
-            <ul className='flex justify-end space-x-3'>
+            <ul className='flex justify-end'>
                 <li><Link to='/'>Home</Link></li>
                 <li><Link to='/about-me'>About Me</Link></li>
                 <li><Link to='/education'>Education</Link></li>

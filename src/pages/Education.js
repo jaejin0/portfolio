@@ -46,23 +46,24 @@ function Education() {
             {department: "ECEN", number: "214", name: "Electrical Circuit Theory"},
         ],
     }
-
     return (
-        <div>
-            <h1 className="flex justify-center">EDUCATION</h1>
-            <Program education={education}/>
-            <h1 className="flex justify-center">COURSEWORKS</h1>
-            <div>
-                <div className="flex justify-center">
-                    <Coursework title="Software" courses={coursework.information_and_intelligent_systems} />
-                    <Coursework title="Information and Intelligent Systems" courses={coursework.information_and_intelligent_systems} />
-                    <Coursework title="Algorithm and Theory" courses={coursework.information_and_intelligent_systems} />
-                    <Coursework title="Systems" courses={coursework.information_and_intelligent_systems} />
-                </div>
-                <div className="flex justify-center">
-                    <Coursework title="Mathematics" courses={coursework.mathematics} />
-                    <Coursework title="Statistics" courses={coursework.statistics} />
-                    <Coursework title="Electrical Engineering" courses={coursework.electrical_engineering} />
+        <div className="flex justify-center">
+            <div className="border max-w-3xl border-gray-200 rounded-lg">
+                <h1 className="flex justify-center">EDUCATION</h1>
+                <Program education={education}/>
+                <h1 className="flex justify-center">COURSEWORKS</h1>
+                <div>
+                    <div className="flex justify-center">
+                        <Coursework title="Software" courses={coursework.information_and_intelligent_systems} />
+                        <Coursework title="Information and Intelligent Systems" courses={coursework.information_and_intelligent_systems} />
+                        <Coursework title="Algorithm and Theory" courses={coursework.information_and_intelligent_systems} />
+                        <Coursework title="Systems" courses={coursework.information_and_intelligent_systems} />
+                    </div>
+                    <div className="flex justify-center">
+                        <Coursework title="Mathematics" courses={coursework.mathematics} />
+                        <Coursework title="Statistics" courses={coursework.statistics} />
+                        <Coursework title="Electrical Engineering" courses={coursework.electrical_engineering} />
+                    </div>
                 </div>
             </div>
         </div>
@@ -74,7 +75,7 @@ function Program(props) {
     // className="block max-w-sm p-6 border border-gray-200 rounded-lg shadow"
     
     return (
-        <div className="flex justify-center p-6 border border-gray-200 rounded-lg shadow">
+        <div className="flex justify-center border border-gray-200 rounded-lg shadow">
             <div>
                 {education.map((index) => (
                     <div key={index.id}>
@@ -89,6 +90,9 @@ function Program(props) {
 }
 
 function Coursework(props) {
+
+    // use pop up to show more description
+
     const title = props.title;
     const courses = props.courses;
 
