@@ -1,9 +1,9 @@
-function Home() {
+import { Container } from '@mui/material'
+
+function AboutMe() {
     return (
-        <div>
-            Home, objectives software engineering in houston area, traits
-        </div>
+        <Container>hello</Container>
     );
 }
 
-export default Home;
+export default AboutMe;
