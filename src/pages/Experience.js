@@ -1,8 +1,10 @@
+import { Container, Card } from "@mui/material";
+
 function Experience() {
     return (
-        <div>
-            experience, activities, skills. Within experience or activity put skills used
-        </div>
+        <Container>
+            <Card></Card>
+        </Container>
     );
 }
 

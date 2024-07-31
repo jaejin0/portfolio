@@ -1,8 +1,10 @@
+import { Container, Card } from "@mui/material";
+
 function Projects() {
     return (
-        <div>
-            projects
-        </div>
+        <Container>
+            <Card></Card>
+        </Container>
     );
 }
 

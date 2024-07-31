@@ -6,7 +6,7 @@ import Header from './layouts/Header'
 import Footer from './layouts/Footer'
 
 // pages
-import Home from './pages/Home'
+import AboutMe from './pages/AboutMe'
 import Education from './pages/Education'
 import Experience from './pages/Experience'
 import NoPage from './pages/NoPage';
@@ -27,7 +27,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<Layout />}>
-          <Route index element={<Home />} />
+          <Route index element={<AboutMe />} />
           <Route path="education" element={<Education />}/>
           <Route path="experience" element={<Experience />}/>
           <Route path="*" element={<NoPage />}/>
