@@ -3,24 +3,27 @@ import { AppBar, Container, Toolbar, Typography, Box, Button } from "@mui/materi
 
 function Header() {
     return (
-        <AppBar>
+        <AppBar position='sticky'>
             <Container>
                 <Toolbar>
                     <Typography
-                        variant="h6"
-                        component="div"
-                        sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+                        variant='h6'
+                        component='div'
+                        sx={{ flexGrow: 3, display: { xs: 'none', sm: 'block', color: '#fff' } }}
                     >
-                        <Link to='/'>Jaejin</Link>
+                        <Button
+                            component={Link} to='/' sx={{ color: '#fff'}} disableRipple>
+                            Jaejin
+                        </Button>
                     </Typography>
                     <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                         <Button component={Link} to='/' sx={{ color: '#fff'}}>About Me</Button>
                     </Box>
                     <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-                        <Button component={Link} to='/experience' sx={{ color: '#fff'}}>Experience</Button>
+                        <Button component={Link} to='/education' sx={{ color: '#fff'}}>Education</Button>
                     </Box>
                     <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-                        <Button component={Link} to='/education' sx={{ color: '#fff'}}>Education</Button>
+                        <Button component={Link} to='/experience' sx={{ color: '#fff'}}>Experience</Button>
                     </Box>
                     <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                         <Button component={Link} to='/projects' sx={{ color: '#fff'}}>Projects</Button>
