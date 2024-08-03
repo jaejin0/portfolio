@@ -1,6 +1,8 @@
+import { Box } from "@mui/material";
+
 function Footer() {
     return (
-        <footer></footer>
+        <Box position='sticky' margin={10}></Box>
     );
 }
 

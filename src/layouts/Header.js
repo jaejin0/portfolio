@@ -3,7 +3,7 @@ import { AppBar, Container, Toolbar, Typography, Box, Button } from "@mui/materi
 
 function Header() {
     return (
-        <AppBar position='sticky'>
+        <AppBar position='sticky' sx={{ marginBottom: 4 }}>
             <Container>
                 <Toolbar>
                     <Typography

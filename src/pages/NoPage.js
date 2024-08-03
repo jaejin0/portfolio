@@ -1,8 +1,12 @@
+import { Container, Card } from "@mui/material";
+
 function NoPage() {
     return (
-        <div>
-            No Page 404 error
-        </div>
+        <Container>
+            <Card>
+                No Page 404 error
+            </Card>
+        </Container>
     );
 }
 
