@@ -1,46 +1,65 @@
 import { Container, Card, Box, Typography, Stack, Divider, Grid, Link } from "@mui/material";
 
-import Standard from '../assets/Standard.png'
-import AggieCodingClub from '../assets/Aggie_Coding_Club.jpg'
-import AggieResearch from '../assets/Aggie_Research_Program.png'
+import reu_intern from '../assets/reu_intern.jpeg'
+import AggieResearch from '../assets/Aggie_Research_Program.jpeg'
+
+import Standard from '../assets/Standard.jpeg'
+import AggieCodingClub from '../assets/Aggie_Coding_Club.jpeg'
 
 function Experience() {
     const exp = [
         {
-            title: 'Apps for Good program @ TeamUp',
+            title: 'Software Engineer @ TeamUp',
             period: 'May 2024 - July 2024',
-            tool: 'Java, TypeScript, Next.js, Spring Boot',
+            tool: 'TypeScript, Java, Next.js, Spring Boot',
             link: 'https://teamup.org/apps-for-good/',
             image: 'https://teamup.org/wp-content/uploads/2024/02/appsforgood_long.png',
-            description: 'I participated in Apps for Good program at TeamUp to help college students'
+            description: 'In my software engineering role, I design and implement dynamic, \
+            responsive user interfaces using Next.js and TypeScript. I also develop robust \
+            and scalable RESTful APIs and microservices with Spring Boot. Additionally, I \
+            actively participate in Agile Scrum ceremonies, including sprint planning, \
+            daily stand-ups, and retrospectives, ensuring effective collaboration and \
+            continuous improvement within the team.'
         },
         {
-            title: 'NSF REU program @ University of Delaware',
+            title: 'Research Intern @ University of Delaware',
             period: 'May 2023 - Aug 2023',
             tool: 'Python, PyTorch, PyGame',
             link: 'https://mrsec.udel.edu/undergraduate-education-and-outreach/reu/',
-            image: 'https://teamup.org/wp-content/uploads/2024/02/appsforgood_long.png',
-            description: 'I participated in Apps for Good program at TeamUp to help college students'
+            image: reu_intern,
+            description: 'As a research intern, I implemented autonomous driving simulations\
+            focused on trajectory control and energy efficiency. I developed self-driving \
+            AI models using advanced machine learning techniques, including Deep Q-Network\
+            (DQN) and Deep Deterministic Policy Gradient (DDPG). This experience sparked \
+            my interest in pursuing a master\'s degree to further research AI and robotics.'
         },
         {
-            title: 'Aggie Research Scholars program @ Texas A&M University',
+            title: 'Undergraduate Research Assistant @ Texas A&M University',
             period: 'Aug 2022 - May 2023',
-            tool: 'Python, Ubuntu, Bash, HDFS',
+            tool: 'Python, Ubuntu, Bash, Apache Spark, HDFS',
             link: 'https://aggieresearch1.wpengine.com/undergraduates/',
             image: AggieResearch,
-            description: 'I participated in Apps for Good program at TeamUp to help college students'
+            description: 'As an undergraduate research assistant, I analyzed the performance\
+            of Apache Spark concerning the memory overuse and underuse of Resilient Distributed\
+            Datasets (RDD). I integrated Spark clusters with the Hadoop Distributed File System\
+            on Linux clusters and evaluated the memory usage performance of the Apache Spark \
+            Big Data framework. Additionally, I modified a graph mining program to convert data \
+            graphs with multiple labels into a binary format.'
         }
     ]
 
     const org = [
         {
-            title: 'Computer Vision Team @ TAMU RoboMasters',
+            title: 'Member of Computer Vision Team @ TAMU RoboMasters',
             period: 'Aug 2023 - May 2024',
             tool: 'Python, OpenCV',
             link: 'https://tamurobomasters.com/',
             image: Standard,
-            description: 'I was selected among 15 students to be a member of Computer Vision Team\
-             of TAMU RoboMasters.'
+            description: 'As a member of the computer vision team at TAMU RoboMasters, I was selected \
+            among 10 individuals to join this student organization. I implemented a computer vision model\
+            to draw contours on enemy targets for the RoboMaster University League. Additionally, I \
+            actively participated in hackathons hosted by the organization, further enhancing my skills\
+            and experience in the field.'
         },
         {
             title: 'Project Manager @ Aggie Coding Club',
@@ -48,8 +67,10 @@ function Experience() {
             tool: 'React.js, JavaScript',
             link: 'https://www.aggiecodingclub.com/',
             image: AggieCodingClub,
-            description: 'I was selected among 15 students to be a member of Computer Vision Team\
-             of TAMU RoboMasters.'
+            description: 'As a project manager at the Aggie Coding Club, I managed over 20 project members,\
+            guiding them in learning web development through weekly workshop meetings. I directed the team\
+            to build front-end web pages, including a Pokédex, personal websites, and e-commerce sites, \
+            ensuring they gained a thorough understanding and proficiency in web development.'
         }
     ]
 
@@ -60,43 +81,43 @@ function Experience() {
                 <Stack>
                     {exp.map((index) => (
                         <Card key={index.id} sx={{
-                            padding: 3,
+                            padding: 4,
                             margin: 2
                         }}>
-                            <Box component='img' src={index.image} sx={{ width: '100%' }}></Box>
-                            <Divider></Divider>
-                            <Grid item sx={{ display: 'flex', justifyContent: 'space-between' }}>
+                            <Box component='img' src={index.image} sx={{ display: "flex", marginX: 'auto', maxHeight: '400px', maxWidth: '100%', padding: 1 }}></Box>
+                            <Divider sx={{ padding: 1}}></Divider>
+                            <Grid item sx={{ display: 'flex', justifyContent: 'space-between', marginY: 1}}>
                                 <Box sx={{ display: 'flex', gap: 1 }}>
                                     <Typography variant='h6'>{index.title}</Typography>
                                     <Link variant='h6' href={index.link} underline='hover'>[link]</Link>
                                 </Box>
                                 <Typography>{index.period}</Typography>
                             </Grid>
-                            <Typography variant='p'>{index.description}</Typography>
-                            <Typography>{index.tool}</Typography>
+                            <Typography variant='p' sx={{ lineHeight: 1.6 }}>{index.description}</Typography>
+                            <Typography sx={{ marginTop: 3 }}>{index.tool}</Typography>
                         </Card>
                     ))}
                 </Stack>
             </Box>
-            <Box>
+            <Box sx={{ marginTop: 4 }}>
                 <Typography variant='h4'>Student Organization</Typography>
                 <Stack>
                     {org.map((index) => (
                         <Card key={index.id} sx={{
-                            padding: 3,
+                            padding: 4,
                             margin: 2
                         }}>
-                            <Box component='img' src={index.image} sx={{ width: '100%' }}></Box>
-                            <Divider></Divider>
-                            <Grid item sx={{ display: 'flex', justifyContent: 'space-between' }}>
+                            <Box component='img' src={index.image} sx={{ display: "flex", marginX: 'auto', maxHeight: '400px', maxWidth: '100%', padding: 1 }}></Box>
+                            <Divider sx={{ padding: 1}}></Divider>
+                            <Grid item sx={{ display: 'flex', justifyContent: 'space-between', marginY: 1}}>
                                 <Box sx={{ display: 'flex', gap: 1 }}>
                                     <Typography variant='h6'>{index.title}</Typography>
                                     <Link variant='h6' href={index.link} underline='hover'>[link]</Link>
                                 </Box>
                                 <Typography>{index.period}</Typography>
                             </Grid>
-                            <Typography variant='p'>{index.description}</Typography>
-                            <Typography>{index.tool}</Typography>
+                            <Typography variant='p' sx={{ lineHeight: 1.6 }}>{index.description}</Typography>
+                            <Typography sx={{ marginTop: 3 }}>{index.tool}</Typography>
                         </Card>
                     ))}
                 </Stack>
