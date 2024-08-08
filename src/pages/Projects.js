@@ -42,6 +42,7 @@ function Projects() {
             end, integrating various existing APIs to address the challenges of the POS system’s prototype.'
         },
     ]
+    
     return (
         <Container maxWidth='md'>
             <Box>

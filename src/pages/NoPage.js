@@ -1,11 +1,9 @@
-import { Container, Card } from "@mui/material";
+import { Container, Card, Typography } from "@mui/material";
 
 function NoPage() {
     return (
-        <Container>
-            <Card>
-                No Page 404 error
-            </Card>
+        <Container maxWidth='md'>
+            <Typography variant="h4" sx={{ display: 'flex', justifyContent: 'center', marginY: 46}}>Page fault 404 error</Typography>
         </Container>
     );
 }
