@@ -13,7 +13,6 @@ import jaejin7 from '../assets/jaejin7.jpeg'
 import jaejin8 from '../assets/jaejin8.jpeg'
 import jaejin9 from '../assets/jaejin9.jpeg'
 
-
 function AboutMe() {
     const itemData = [jaejin1, jaejin2, jaejin3, jaejin4, jaejin5, jaejin6, jaejin7, jaejin8, jaejin9]
     const valueList = ['Hard working', 'Passionate', 'Creative', 'Dedicated'];

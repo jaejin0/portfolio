@@ -42,7 +42,7 @@ function Projects() {
             end, integrating various existing APIs to address the challenges of the POS system’s prototype.'
         },
     ]
-    
+
     return (
         <Container maxWidth='md'>
             <Box>
@@ -58,7 +58,7 @@ function Projects() {
                             <Grid item sx={{ display: 'flex', justifyContent: 'space-between', marginY: 1}}>
                                 <Box sx={{ display: 'flex', gap: 1 }}>
                                     <Typography variant='h6'>{index.title}</Typography>
-                                    {index.link != '' && <Link variant='h6' href={index.link} underline='hover'>[link]</Link>}
+                                    {index.link !== '' && <Link variant='h6' href={index.link} underline='hover'>[link]</Link>}
                                 </Box>
                                 <Typography>{index.period}</Typography>
                             </Grid>

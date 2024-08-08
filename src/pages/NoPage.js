@@ -1,4 +1,4 @@
-import { Container, Card, Typography } from "@mui/material";
+import { Container, Typography } from "@mui/material";
 
 function NoPage() {
     return (
