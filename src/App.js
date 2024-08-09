@@ -25,7 +25,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/" element={<Layout />}>
+        <Route exact path="/portfolio/" element={<Layout />}>
           <Route index element={<AboutMe />} />
           <Route path="education" element={<Education />}/>
           <Route path="experience" element={<Experience />}/>
