@@ -91,7 +91,7 @@ function AboutMe() {
                 <Grow
                     in={checked}
                     style={{ transformOrigin: '0 0 0' }}
-                    {...(checked ? { timeout: 1500 } : {})}
+                    {...(checked ? { timeout: 1000 } : {})}
                 >
                     <Typography variant='h3' color={colorList[index]} sx={{ marginX: 'auto' }}>{valueList[index]}</Typography>
                 </Grow>
