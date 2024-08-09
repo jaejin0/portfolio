@@ -27,23 +27,46 @@ function AboutMe() {
     const [index, setIndex] = useState(0);
     const [checked, setChecked] = useState(true);
 
+    // function timer() {
+    //     setTimeout(() => {
+    //         setChecked(false)
+    //     }, 4000)
+    //     setTimeout(() => {
+    //         if (index !== valueList.length - 1) {
+    //             setIndex(index + 1);
+    //         }
+    //         else {
+    //             setIndex(0);
+    //         }
+    //     }, 4500);
+    //     setTimeout(() => {
+    //         setChecked(true)
+    //     }, 5000)
+    // };
+    // useEffect(() => {
+    //     timer();
+    // }, [index]);
+    let time
     function timer() {
-        setTimeout(() => {
-            setChecked(false)
-        }, 4000)
-        setTimeout(() => {
-            if (index !== valueList.length - 1) {
-                setIndex(index + 1);
-            }
-            else {
-                setIndex(0);
-            }
-        }, 4500);
-        setTimeout(() => {
-            setChecked(true)
-        }, 5000)
+        time = setTimeout(() => {
+            setTimeout(() => { // appear
+                setChecked(true)
+            }, 0)
+            setTimeout(() => { // disappear
+                setChecked(false)
+            }, 3000)
+            setTimeout(() => {
+                if (index !== valueList.length - 1) {
+                    setIndex(index + 1);
+                }
+                else {
+                    setIndex(0);
+                }
+            }, 3200)
+        }, 3500);
     };
     useEffect(() => {
+        clearTimeout(time)
         timer();
     }, [index]);
     
@@ -68,11 +91,11 @@ function AboutMe() {
                 <Grow
                     in={checked}
                     style={{ transformOrigin: '0 0 0' }}
-                    {...(checked ? { timeout: 1000 } : {})}
+                    {...(checked ? { timeout: 1500 } : {})}
                 >
                     <Typography variant='h3' color={colorList[index]} sx={{ marginX: 'auto' }}>{valueList[index]}</Typography>
                 </Grow>
-                <Typography variant='h3' sx={{ marginX: 'auto' }}>programmer</Typography>
+                <Typography variant='h3' sx={{ marginRight: '18px' }}>programmer</Typography>
             </Card>
             <Box sx={{ marginTop: 20 }}>
                 <Typography variant='h4'>Profile</Typography>
