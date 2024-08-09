@@ -14,16 +14,17 @@ const theme = createTheme({
       main: '#3fc45e'
     }
   },
-  // components: {
-  //   MuiPaper: {
-  //     styleOverrides: {
-  //       root: {
-  //         padding: '20px',
-  //         boarderRadius: '12px'
-  //       }
-  //     }
-  //   }
-  // }
+  typography: {
+    h3: {
+      fontSize: '6vw',
+        '@media (min-width:870px)': {
+        fontSize: '3rem',
+      },
+      // [theme.breakpoints.up('md')]: {
+      //   fontSize: '2rem',
+      // },
+    }
+  }
 })
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

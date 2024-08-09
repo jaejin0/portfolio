@@ -46,6 +46,7 @@ function AboutMe() {
                 variant="outlined"
                 sx={{
                     display: 'flex',
+                    flexWrap: 'wrap',
                     flexDirection: 'row',
                     justifyContent: 'space-between',
                     alignItems: "center",
@@ -56,22 +57,22 @@ function AboutMe() {
                     padding: 8,
                 }}
             >
-                <Typography variant='h3'>I'm a </Typography>
+                <Typography variant='h3' sx={{ marginLeft: '30px' }}>I'm a </Typography>
                 <Grow
                     in={checked}
                     style={{ transformOrigin: '0 0 0' }}
                     {...(checked ? { timeout: 1000 } : {})}
                 >
-                    <Typography variant='h3' color={colorList[index]}>{valueList[index]}</Typography>
+                    <Typography variant='h3' color={colorList[index]} sx={{ marginX: 'auto' }}>{valueList[index]}</Typography>
                 </Grow>
-                <Typography variant='h3'>programmer</Typography>
+                <Typography variant='h3' sx={{ marginX: 'auto' }}>programmer</Typography>
             </Card>
             <Box sx={{ marginTop: 20 }}>
                 <Typography variant='h4'>Profile</Typography>
                 <Avatar
                     alt="Jaejin Cha"
                     src={jaejin}
-                    sx={{ width: 400, height: 400, margin: 4 }}
+                    sx={{ width: '80%', height: '80%', maxWidth: 400, maxHeight: 400, marginY: 4, marginX: 'auto' }}
                 />
                 <Box sx={{ margin: 3}}>
                     <Typography variant='h5' sx={{ fontWeight: '500', marginBottom: 1 }}>Jaejin Cha</Typography>
@@ -80,20 +81,23 @@ function AboutMe() {
             </Box>
             <Box sx={{ marginTop: 20 }}>
                 <Typography variant='h4'>Photos</Typography>
-                <ImageList sx={{ width: '100%' }} cols={3}>
-                {itemData.map((item) => (
-                    <ImageListItem key={item.id}>
-                    <img
-                        src={item}
-                        loading="lazy"
-                    />
-                    </ImageListItem>
-                ))}
-                </ImageList>
+                <Box sx={{ padding: 1 }}>
+                    <ImageList sx={{ width: '100%' }} cols={3}>
+                    {itemData.map((item) => (
+                        <ImageListItem key={item.id}>
+                        <img
+                            src={item}
+                            loading="lazy"
+                        />
+                        </ImageListItem>
+                    ))}
+                    </ImageList>
+                </Box>
+                
             </Box>
             <Box sx={{ marginTop: 20 }}>
                 <Typography variant='h4'>Contacts</Typography>
-                <Card sx={{ maxWidth: 400, padding: 4, marginY: 6, marginX: 'auto'}}>
+                <Card sx={{ width: 400, maxWidth: '90%', padding: 4, marginY: 6, marginX: 'auto'}}>
                     <Stack spacing={1}>
                         <Typography variant='h6'>jaejin0109@gmail.com</Typography>
                         <Typography variant='h6'>(832) 745-9922</Typography>

@@ -28,7 +28,7 @@ function Projects() {
             description: 'For the MAES student organization, I developed a points reward system using Agile \
             methodologies and CI/CD practices. I successfully deployed a web application with a PostgreSQL \
             backend using the Rails framework. In this project, I took on multiple roles within the Agile team,\
-            including analyst, designer, developer, tester, and trainer. (You need an Texas A&M email to login to\
+            including analyst, designer, developer, tester, and trainer. (You need a Texas A&M email to login to\
             the service).'
         },
         {
