@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Container, Typography, Box, Card, Link, Grow, Stack, Avatar, ImageList, ImageListItem } from '@mui/material'
+import { Container, Typography, Box, Card, Link, Grow, Stack, Avatar, ImageList, ImageListItem, Divider } from '@mui/material'
 
 import jaejin from '../assets/jaejin.jpeg'
 
@@ -14,6 +14,13 @@ import jaejin8 from '../assets/jaejin8.jpeg'
 import jaejin9 from '../assets/jaejin9.jpeg'
 
 function AboutMe() {
+    const progLangProf = ['Python', 'JavaScript', 'C++']
+    const progLangComp = ['Java', 'TypeScript']
+    const frameworkProf = ['React', 'Node', 'Express', 'PyTorch']
+    const frameworkComp = ['Spring Boot', 'Flask', 'Next', 'Vue']
+    const developerTools = ['Git', 'GitHub', 'Linux', 'VS Code', 'Jira']
+    const developerToolsHalf = Math.ceil(developerTools.length / 2)
+
     const itemData = [jaejin1, jaejin2, jaejin3, jaejin4, jaejin5, jaejin6, jaejin7, jaejin8, jaejin9]
     const valueList = ['Hard working', 'Passionate', 'Creative', 'Dedicated'];
     const colorList = ['#4285F4', '#34A853', '#FBBC05', '#EA4335'];
@@ -57,7 +64,7 @@ function AboutMe() {
                     padding: 8,
                 }}
             >
-                <Typography variant='h3' sx={{ marginLeft: '30px' }}>I'm a </Typography>
+                <Typography variant='h3' sx={{ marginLeft: '18px' }}>I'm a </Typography>
                 <Grow
                     in={checked}
                     style={{ transformOrigin: '0 0 0' }}
@@ -74,9 +81,35 @@ function AboutMe() {
                     src={jaejin}
                     sx={{ width: '80%', height: '80%', maxWidth: 400, maxHeight: 400, marginY: 4, marginX: 'auto' }}
                 />
-                <Box sx={{ margin: 3}}>
+                <Box sx={{ margin: 4 }}>
                     <Typography variant='h5' sx={{ fontWeight: '500', marginBottom: 1 }}>Jaejin Cha</Typography>
                     <Typography variant='h6'>Computer Science Master's student @ Texas A&M University</Typography>
+                </Box>
+            </Box>
+            <Box sx={{ marginTop: 20 }}>
+                <Typography variant='h4'>Skills</Typography>
+                <Box sx={{ margin: 4 }}>
+                    <Card sx={{ margin: 2, padding: 3 }}>
+                        <Typography variant='h6' sx={{ marginBottom: 1 }}>Languages:</Typography>
+                        <Box sx={{ display: 'flex', justifyContent: 'space-around'}}>
+                            <Skills title='proficient' list={progLangProf}></Skills>
+                            <Skills title='competent' list={progLangComp}></Skills>
+                        </Box>
+                    </Card>
+                    <Card sx={{ margin: 2, padding: 3 }}>
+                        <Typography variant='h6' sx={{ marginBottom: 1 }}>Frameworks:</Typography>
+                        <Box sx={{ display: 'flex', justifyContent: 'space-around'}}>
+                            <Skills title='proficient' list={frameworkProf}></Skills>
+                            <Skills title='competent' list={frameworkComp}></Skills>
+                        </Box>
+                    </Card>
+                    <Card sx={{ margin: 2, padding: 3 }}>
+                        <Typography variant='h6'>Developer Tools:</Typography>
+                        <Box sx={{ display: 'flex', justifyContent: 'space-around'}}>
+                            <Skills list={developerTools.slice(0, developerToolsHalf)}></Skills>
+                            <Skills list={developerTools.slice(developerToolsHalf, )}></Skills>
+                        </Box>
+                    </Card>
                 </Box>
             </Box>
             <Box sx={{ marginTop: 20 }}>
@@ -97,19 +130,36 @@ function AboutMe() {
             </Box>
             <Box sx={{ marginTop: 20 }}>
                 <Typography variant='h4'>Contacts</Typography>
-                <Card sx={{ width: 400, maxWidth: '90%', padding: 4, marginY: 6, marginX: 'auto'}}>
+                <Card sx={{ width: 300, maxWidth: '90%', padding: 5, marginY: 6, marginX: 'auto'}}>
                     <Stack spacing={1}>
                         <Typography variant='h6'>jaejin0109@gmail.com</Typography>
                         <Typography variant='h6'>(832) 745-9922</Typography>
-                        <Link variant='h6' underline="hover" color='textPrimary' href='https://www.linkedin.com/in/jaejincha/'>https://www.linkedin.com/in/jaejincha/</Link>
-                        <Link variant='h6' underline="hover" color='textPrimary' href='https://github.com/jaejin0'>https://github.com/jaejin0</Link>
+                        <Link variant='h6' underline="hover" color='textPrimary' href='https://www.linkedin.com/in/jaejincha/'>linkedin.com/in/jaejincha/</Link>
+                        <Link variant='h6' underline="hover" color='textPrimary' href='https://github.com/jaejin0'>github.com/jaejin0</Link>
                     </Stack>
                 </Card>
             </Box>
-            <Box sx={{ marginTop: 20, marginX: 'auto'  }}>
-                <Typography variant='h6' sx={{ display: 'flex', justifyContent: 'center' }}>This portfolio is created by using React and MUI</Typography>
+            <Box sx={{ marginTop: 20, marginX: 'auto', display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
+                <Typography variant='h6' paddingRight={1}>This portfolio is created using</Typography>
+                <Typography variant='h6'>React and MUI</Typography>
             </Box>
         </Container>
+    );
+}
+
+function Skills(props) {
+    const title = props.title
+    const list = props.list
+    console.log(title)
+    return (
+        <Box>
+            {title !== undefined && <Typography variant='h6' marginY={1}>({title})</Typography>}
+            {list.map((index) => (
+                <Box key={index.id}>
+                    <Typography variant='h6' marginY={0.5}>{index}</Typography>
+                </Box>
+            ))}  
+        </Box>
     );
 }
 

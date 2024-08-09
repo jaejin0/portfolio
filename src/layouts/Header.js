@@ -1,25 +1,27 @@
 import { Link } from 'react-router-dom';
-import { AppBar, Toolbar, Typography, Box, Button, Slide, useScrollTrigger } from "@mui/material";
+import { AppBar, Toolbar, Typography, Box, Container, Button, Slide, useScrollTrigger } from "@mui/material";
 
 function Header() {
     return (
         <HideOnScroll>
             <AppBar position='sticky' sx={{ marginBottom: 4 }}>
-                <Toolbar>
-                    <Button component={Link} to='/' sx={{ flexGrow: 3, display: { sm: 'block', color: '#fff' }}} disableRipple>
-                        <Typography sx={{ fontFamily: 'Monospace', letterSpacing: 4 }}>Jaejin</Typography>
+                <Toolbar sx={{ display: 'flex', flexWrap: 'wrap' }}>
+                    <Button component={Link} to='/' sx={{ flexGrow: 1, display: { sm: 'block', color: '#fff' }}} disableRipple>
+                        <Typography sx={{ fontFamily: 'Monospace', fontSize: 18, letterSpacing: 4 }}>Jaejin</Typography>
                     </Button>
-                    <Box sx={{ display: { sm: 'block' } }}>
-                        <Button component={Link} to='/' sx={{ color: '#fff'}}>About Me</Button>
-                    </Box>
-                    <Box sx={{ display: { sm: 'block' } }}>
-                        <Button component={Link} to='/education' sx={{ color: '#fff'}}>Education</Button>
-                    </Box>
-                    <Box sx={{ display: { sm: 'block' } }}>
-                        <Button component={Link} to='/experience' sx={{ color: '#fff'}}>Experience</Button>
-                    </Box>
-                    <Box sx={{ display: { sm: 'block' } }}>
-                        <Button component={Link} to='/projects' sx={{ color: '#fff'}}>Projects</Button>
+                    <Box sx={{ display: 'flex', marginX: 'auto' }}>
+                        <Box sx={{ display: { sm: 'block' } }}>
+                            <Button component={Link} to='/' sx={{ color: '#fff', fontSize: '13px'}}>About Me</Button>
+                        </Box>
+                        <Box sx={{ display: { sm: 'block' } }}>
+                            <Button component={Link} to='/education' sx={{ color: '#fff', fontSize: '13px'}}>Education</Button>
+                        </Box>
+                        <Box sx={{ display: { sm: 'block' } }}>
+                            <Button component={Link} to='/experience' sx={{ color: '#fff', fontSize: '13px'}}>Experience</Button>
+                        </Box>
+                        <Box sx={{ display: { sm: 'block' } }}>
+                            <Button component={Link} to='/projects' sx={{ color: '#fff', fontSize: '13px'}}>Projects</Button>
+                        </Box>
                     </Box>
                 </Toolbar>
             </AppBar>

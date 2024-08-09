@@ -89,7 +89,7 @@ function Experience() {
                             <Grid item sx={{ display: 'flex', justifyContent: 'space-between', marginY: 1}}>
                                 <Box sx={{ display: 'flex', gap: 1 }}>
                                     <Typography variant='h6'>{index.title}</Typography>
-                                    <Link variant='h6' href={index.link} underline='hover'>[link]</Link>
+                                    {index.link !== '' && <Link variant='h6' href={index.link} underline='hover'>[link]</Link>}
                                 </Box>
                                 <Typography>{index.period}</Typography>
                             </Grid>
@@ -112,7 +112,7 @@ function Experience() {
                             <Grid item sx={{ display: 'flex', justifyContent: 'space-between', marginY: 1}}>
                                 <Box sx={{ display: 'flex', gap: 1 }}>
                                     <Typography variant='h6'>{index.title}</Typography>
-                                    <Link variant='h6' href={index.link} underline='hover'>[link]</Link>
+                                    {index.link !== '' && <Link variant='h6' href={index.link} underline='hover'>[link]</Link>}
                                 </Box>
                                 <Typography>{index.period}</Typography>
                             </Grid>
