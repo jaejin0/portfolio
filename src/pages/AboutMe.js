@@ -152,11 +152,11 @@ function Skills(props) {
     const list = props.list
     console.log(title)
     return (
-        <Box>
-            {title !== undefined && <Typography variant='h6' marginY={1}>({title})</Typography>}
+        <Box marginY={1}>
+            {title !== undefined && <Typography variant='h6'>({title})</Typography>}
             {list.map((index) => (
                 <Box key={index.id}>
-                    <Typography variant='h6' marginY={0.5}>{index}</Typography>
+                    <Typography variant='h6' marginY={1}>{index}</Typography>
                 </Box>
             ))}  
         </Box>
