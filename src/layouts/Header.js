@@ -11,16 +11,16 @@ function Header() {
                     </Button>
                     <Box sx={{ display: 'flex', marginX: 'auto' }}>
                         <Box sx={{ display: { sm: 'block' } }}>
-                            <Button component={Link} to='/' sx={{ color: '#fff', fontSize: '13px'}}>About Me</Button>
+                            <Button component={Link} to='/portfolio/' sx={{ color: '#fff', fontSize: '13px'}}>About Me</Button>
                         </Box>
                         <Box sx={{ display: { sm: 'block' } }}>
-                            <Button component={Link} to='/education' sx={{ color: '#fff', fontSize: '13px'}}>Education</Button>
+                            <Button component={Link} to='/portfolio/education' sx={{ color: '#fff', fontSize: '13px'}}>Education</Button>
                         </Box>
                         <Box sx={{ display: { sm: 'block' } }}>
-                            <Button component={Link} to='/experience' sx={{ color: '#fff', fontSize: '13px'}}>Experience</Button>
+                            <Button component={Link} to='/portfolio/experience' sx={{ color: '#fff', fontSize: '13px'}}>Experience</Button>
                         </Box>
                         <Box sx={{ display: { sm: 'block' } }}>
-                            <Button component={Link} to='/projects' sx={{ color: '#fff', fontSize: '13px'}}>Projects</Button>
+                            <Button component={Link} to='/portfolio/projects' sx={{ color: '#fff', fontSize: '13px'}}>Projects</Button>
                         </Box>
                     </Box>
                 </Toolbar>
