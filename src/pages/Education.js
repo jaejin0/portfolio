@@ -20,9 +20,10 @@ function Education() {
             coursework : [
                 'CSCE 752 Robotics and Spatial Intelligence',
                 'CSCE 631 Intelligent Agent',
-                'CSCE 691 Research',
             ],
-            otherCoursework : [],
+            otherCoursework : [
+                'CSCE 689 Multi-agent Reinforcement Learning',
+            ],
         },
         {
             title: 'Bachelor of Science in Compute Science, Minor in Math',

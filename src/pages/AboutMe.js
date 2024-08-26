@@ -14,11 +14,11 @@ import jaejin8 from '../assets/jaejin8.jpeg'
 import jaejin9 from '../assets/jaejin9.jpeg'
 
 function AboutMe() {
-    const progLangProf = ['Python', 'JavaScript', 'C++']
-    const progLangComp = ['Java', 'TypeScript']
-    const frameworkProf = ['React', 'Node', 'Express', 'PyTorch']
-    const frameworkComp = ['Spring Boot', 'Flask', 'Next', 'Vue']
-    const developerTools = ['Git', 'GitHub', 'Linux', 'VS Code', 'Jira']
+    const progLangProf = ['Python', 'Java', 'JavaScript', 'C++']
+    const progLangComp = ['Ruby', 'TypeScript', 'C#']
+    const frameworkProf = ['Spring', 'Django', 'Express', 'NodeJS', 'React']
+    const frameworkComp = ['Flask', 'Rails', 'PyTorch', 'ROS', 'Vue']
+    const developerTools = ['Git', 'Linux', 'AWS', 'Docker']
     const developerToolsHalf = Math.ceil(developerTools.length / 2)
 
     const itemData = [jaejin1, jaejin2, jaejin3, jaejin4, jaejin5, jaejin6, jaejin7, jaejin8, jaejin9]
@@ -95,7 +95,7 @@ function AboutMe() {
                 >
                     <Typography variant='h3' color={colorList[index]} sx={{ marginX: 'auto' }}>{valueList[index]}</Typography>
                 </Grow>
-                <Typography variant='h3' sx={{ marginRight: '18px' }}>programmer</Typography>
+                <Typography variant='h3' sx={{ marginRight: '18px' }}>developer</Typography>
             </Card>
             <Box sx={{ marginTop: 20 }}>
                 <Typography variant='h4'>Profile</Typography>
@@ -106,7 +106,8 @@ function AboutMe() {
                 />
                 <Box sx={{ margin: 4 }}>
                     <Typography variant='h5' sx={{ fontWeight: '500', marginBottom: 1 }}>Jaejin Cha</Typography>
-                    <Typography variant='h6'>Computer Science Master's student @ Texas A&M University</Typography>
+                    <Typography variant='h6'>Master's in Computer Science @ Texas A&M University, researching in Multi AI Robots</Typography>
+                    <Typography variant='h6'>Software Engineer, focusing on Backend Development & AI</Typography>
                 </Box>
             </Box>
             <Box sx={{ marginTop: 20 }}>

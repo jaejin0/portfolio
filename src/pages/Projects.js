@@ -9,7 +9,7 @@ function Projects() {
         {
             title: 'NatureNet',
             period: 'Jan 2024 - May 2024',
-            tool: 'Python, JavaScript, React.js, Express.js, Flask, OpenCV, PyTorch, YOLOv8, Roboflow',
+            tool: 'Python, Flask, PyTorch, OpenCV, JavaScript, React, Express, Roboflow',
             link: 'https://drive.google.com/file/d/1sy7SBjxcC6cigLgP87VX8SLH8FAio2MV/view?usp=sharing',
             image: NatureNet,
             description: 'NatureNet is a service which alerts users when dangerous animals are spotted \
@@ -34,7 +34,7 @@ function Projects() {
         {
             title: 'Kung Fu Tea POS System',
             period: 'Aug 2023 - Dec 2023',
-            tool: 'JavaScript, Vue.js, Express.js, Heroku',
+            tool: 'JavaScript, Express, Vue, Heroku',
             link: '',
             image: Kung_Fu_Tea,
             description: 'For the Kung Fu Tea POS system project, I developed a mock POS system as a web application\

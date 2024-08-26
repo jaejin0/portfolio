@@ -10,19 +10,19 @@ function Experience() {
     const exp = [
         {
             title: 'Software Engineer @ TeamUp',
-            period: 'May 2024 - July 2024',
-            tool: 'TypeScript, Java, Next.js, Spring Boot',
+            period: 'May 2024 - Aug 2024',
+            tool: 'Java, Spring Boot, TypeScript, Next.js',
             link: 'https://teamup.org/apps-for-good/',
             image: 'https://teamup.org/wp-content/uploads/2024/02/appsforgood_long.png',
-            description: 'In my software engineering role, I design and implement dynamic, \
-            responsive user interfaces using Next.js and TypeScript. I also develop robust \
-            and scalable RESTful APIs and microservices with Spring Boot. Additionally, I \
+            description: 'In my software engineering role, I developed robust and scalable\
+            RESTful APIs and microservices for the backend with Spring Boot. I also design and implement dynamic, \
+            responsive user interfaces using Next.js and TypeScript. Additionally, I \
             actively participate in Agile Scrum ceremonies, including sprint planning, \
             daily stand-ups, and retrospectives, ensuring effective collaboration and \
             continuous improvement within the team.'
         },
         {
-            title: 'Research Intern @ University of Delaware',
+            title: 'REU Research Intern @ University of Delaware',
             period: 'May 2023 - Aug 2023',
             tool: 'Python, PyTorch, PyGame',
             link: 'https://mrsec.udel.edu/undergraduate-education-and-outreach/reu/',
@@ -31,12 +31,12 @@ function Experience() {
             focused on trajectory control and energy efficiency. I developed self-driving \
             AI models using advanced machine learning techniques, including Deep Q-Network\
             (DQN) and Deep Deterministic Policy Gradient (DDPG). This experience sparked \
-            my interest in pursuing a master\'s degree to further research AI and robotics.'
+            my interest in pursuing a master\'s degree to further research AI Robotics.'
         },
         {
             title: 'Undergraduate Research Assistant @ Texas A&M University',
             period: 'Aug 2022 - May 2023',
-            tool: 'Python, Ubuntu, Bash, Apache Spark, HDFS',
+            tool: 'Python, Linux, Bash, Apache Spark',
             link: 'https://aggieresearch1.wpengine.com/undergraduates/',
             image: AggieResearch,
             description: 'As an undergraduate research assistant, I analyzed the performance\
@@ -50,12 +50,12 @@ function Experience() {
 
     const org = [
         {
-            title: 'Member of Computer Vision Team @ TAMU RoboMasters',
+            title: 'CV Team Member @ TAMU RoboMasters',
             period: 'Aug 2023 - May 2024',
             tool: 'Python, OpenCV',
             link: 'https://tamurobomasters.com/',
             image: Standard,
-            description: 'As a member of the computer vision team at TAMU RoboMasters, I was selected \
+            description: 'As a member of the computer vision (CV) team at TAMU RoboMasters, I was selected \
             among 10 individuals to join this student organization. I implemented a computer vision model\
             to draw contours on enemy targets for the RoboMaster University League. Additionally, I \
             actively participated in hackathons hosted by the organization, further enhancing my skills\
@@ -64,7 +64,7 @@ function Experience() {
         {
             title: 'Project Manager @ Aggie Coding Club',
             period: 'Jan 2022 - May 2022',
-            tool: 'React.js, JavaScript',
+            tool: 'React, JavaScript',
             link: 'https://www.aggiecodingclub.com/',
             image: AggieCodingClub,
             description: 'As a project manager at the Aggie Coding Club, I managed over 20 project members,\
