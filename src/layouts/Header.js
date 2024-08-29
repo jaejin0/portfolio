@@ -6,7 +6,7 @@ function Header() {
         <HideOnScroll>
             <AppBar position='sticky' sx={{ marginBottom: 4 }}>
                 <Toolbar sx={{ display: 'flex', flexWrap: 'wrap' }}>
-                    <Button component={Link} to='/' sx={{ flexGrow: 1, display: { sm: 'block', color: '#fff' }}} disableRipple>
+                    <Button component={Link} to='/portfolio/' sx={{ flexGrow: 1, display: { sm: 'block', color: '#fff' }}} disableRipple>
                         <Typography sx={{ fontFamily: 'Monospace', fontSize: 18, letterSpacing: 4 }}>Jaejin</Typography>
                     </Button>
                     <Box sx={{ display: 'flex', marginX: 'auto' }}>
