@@ -27,25 +27,6 @@ function AboutMe() {
     const [index, setIndex] = useState(0);
     const [checked, setChecked] = useState(true);
 
-    // function timer() {
-    //     setTimeout(() => {
-    //         setChecked(false)
-    //     }, 4000)
-    //     setTimeout(() => {
-    //         if (index !== valueList.length - 1) {
-    //             setIndex(index + 1);
-    //         }
-    //         else {
-    //             setIndex(0);
-    //         }
-    //     }, 4500);
-    //     setTimeout(() => {
-    //         setChecked(true)
-    //     }, 5000)
-    // };
-    // useEffect(() => {
-    //     timer();
-    // }, [index]);
     let time
     function timer() {
         time = setTimeout(() => {
@@ -105,9 +86,9 @@ function AboutMe() {
                     sx={{ width: '80%', height: '80%', maxWidth: 400, maxHeight: 400, marginY: 4, marginX: 'auto' }}
                 />
                 <Box sx={{ margin: 4 }}>
-                    <Typography variant='h5' sx={{ fontWeight: '500', marginBottom: 1 }}>Jaejin Cha</Typography>
+                    <Typography variant='h5' sx={{ fontWeight: '500', marginBottom: 1 }}>Jaejin Cha / Software Engineer</Typography>
+                    <Typography variant='h6'>Experience in Software Development & AI</Typography>
                     <Typography variant='h6'>Master's in Computer Science @ Texas A&M University, researching in Multi AI Robots</Typography>
-                    <Typography variant='h6'>Software Engineer, focusing on Backend Development & AI</Typography>
                 </Box>
             </Box>
             <Box sx={{ marginTop: 20 }}>
