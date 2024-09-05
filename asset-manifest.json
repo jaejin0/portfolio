@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.e6c13ad2.css",
-    "main.js": "/portfolio/static/js/main.97cdecde.js",
+    "main.js": "/portfolio/static/js/main.e080e086.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
     "static/media/jaejin2.jpeg": "/portfolio/static/media/jaejin2.31e733d0e5e43be90353.jpeg",
     "static/media/graduation_Alma_Mater.jpeg": "/portfolio/static/media/graduation_Alma_Mater.36132e6d9cd4681cf2d0.jpeg",
@@ -24,11 +24,11 @@
     "static/media/kung_fu_tea.jpeg": "/portfolio/static/media/kung_fu_tea.dc564015390c086eb22b.jpeg",
     "index.html": "/portfolio/index.html",
     "main.e6c13ad2.css.map": "/portfolio/static/css/main.e6c13ad2.css.map",
-    "main.97cdecde.js.map": "/portfolio/static/js/main.97cdecde.js.map",
+    "main.e080e086.js.map": "/portfolio/static/js/main.e080e086.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.97cdecde.js"
+    "static/js/main.e080e086.js"
   ]
 }
