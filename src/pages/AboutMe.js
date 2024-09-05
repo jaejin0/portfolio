@@ -86,8 +86,8 @@ function AboutMe() {
                     sx={{ width: '80%', height: '80%', maxWidth: 400, maxHeight: 400, marginY: 4, marginX: 'auto' }}
                 />
                 <Box sx={{ margin: 4 }}>
-                    <Typography variant='h5' sx={{ fontWeight: '500', marginBottom: 1 }}>Jaejin Cha / Software Engineer</Typography>
-                    <Typography variant='h6'>Experience in Software Development & AI</Typography>
+                    <Typography variant='h5' sx={{ fontWeight: '500', marginBottom: 3 }}>Jaejin Cha / Software Engineer</Typography>
+                    <Typography variant='h6' sx={{ marginBottom: 1 }}>Experience in Software Development & AI</Typography>
                     <Typography variant='h6'>Master's in Computer Science @ Texas A&M University, researching in Multi AI Robots</Typography>
                 </Box>
             </Box>

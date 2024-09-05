@@ -73,7 +73,7 @@ function Education() {
     return (
         <Container maxWidth='md'>
             <Box>
-                <Typography variant="h4">Education</Typography>
+                <Typography variant="h4" sx={{ margin: 2 }}>Education</Typography>
                 <Stack>
                     {edu.map((index) => (
                         <Card key={index.id} sx={{

@@ -82,7 +82,8 @@ function Experience() {
                     {exp.map((index) => (
                         <Card key={index.id} sx={{
                             padding: 4,
-                            margin: 2
+                            margin: 2,
+                            marginBottom: 3
                         }}>
                             <Box component='img' src={index.image} sx={{ display: "flex", marginX: 'auto', maxHeight: '400px', maxWidth: '100%', padding: 1 }}></Box>
                             <Divider sx={{ padding: 1}}></Divider>
@@ -99,8 +100,8 @@ function Experience() {
                     ))}
                 </Stack>
             </Box>
-            <Box sx={{ marginTop: 4 }}>
-                <Typography variant='h4'>Student Organization</Typography>
+            <Box sx={{ marginTop: 6 }}>
+                <Typography variant='h4' sx={{ margin: 2 }}>Student Organization</Typography>
                 <Stack>
                     {org.map((index) => (
                         <Card key={index.id} sx={{
