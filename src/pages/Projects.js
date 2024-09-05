@@ -51,7 +51,8 @@ function Projects() {
                     {proj.map((index) => (
                         <Card key={index.id} sx={{
                             padding: 4,
-                            margin: 2
+                            margin: 2,
+                            marginBottom: 3
                         }}>
                             <Box component='img' src={index.image} sx={{ display: "flex", marginX: 'auto', maxHeight: '400px', maxWidth: '100%', padding: 1 }}></Box>
                             <Divider sx={{ padding: 1}}></Divider>
