@@ -16,7 +16,7 @@ import jaejin9 from '../assets/jaejin9.jpeg'
 function AboutMe() {
     const progLangProf = ['Python', 'Java', 'JavaScript', 'C++']
     const progLangComp = ['Ruby', 'TypeScript', 'C#']
-    const frameworkProf = ['Spring', 'Django', 'Express', 'NodeJS', 'React']
+    const frameworkProf = ['Spring Boot', 'Django', 'Express', 'NodeJS', 'React']
     const frameworkComp = ['Flask', 'Rails', 'PyTorch', 'ROS', 'Vue']
     const developerTools = ['Git', 'Linux', 'AWS', 'Docker']
     const developerToolsHalf = Math.ceil(developerTools.length / 2)
