@@ -9,7 +9,7 @@ import AggieCodingClub from '../assets/Aggie_Coding_Club.jpeg'
 function Experience() {
     const exp = [
         {
-            title: 'Software Engineer @ TeamUp',
+            title: 'Software Engineer Intern @ TeamUp',
             period: 'May 2024 - Aug 2024',
             tool: 'Java, Spring Boot, TypeScript, Next.js',
             link: 'https://teamup.org/apps-for-good/',
