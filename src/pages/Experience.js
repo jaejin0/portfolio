@@ -8,7 +8,15 @@ import AggieCodingClub from '../assets/Aggie_Coding_Club.jpeg'
 
 function Experience() {
     const exp = [
-        {
+	{
+	    title: 'Software Engineer Intern @ Endeavr Institute',
+	    period: 'Oct 2024 - Present',
+	    tool: 'Python, PyTorch, ROS, CARLA',
+	    link: 'https://endeavr.city/',
+	    image: 'https://teamup.org/wp-content/uploads/2024/02/appsforgood_long.png',
+	    description: 'Developed an end-to-end autonomous driving frameworks to future-proof underserved communities.'
+	},
+	{
             title: 'Software Engineer Intern @ TeamUp',
             period: 'May 2024 - Aug 2024',
             tool: 'Java, Spring Boot, TypeScript, Next.js',
