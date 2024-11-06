@@ -10,7 +10,11 @@ function Projects() {
             title: 'NatureNet',
             period: 'Jan 2024 - May 2024',
             tool: 'Python, Flask, PyTorch, OpenCV, JavaScript, React, Express, Roboflow',
-            link: 'https://drive.google.com/file/d/1sy7SBjxcC6cigLgP87VX8SLH8FAio2MV/view?usp=sharing',
+            // 2 links: github link + deployed link
+	    // essay on intro, problem definition, methodology, result, conclusion, with photos, resources used
+	    // medium link
+	    // put category. e.g. category: computer vision, fullstack web development
+	    link: 'https://drive.google.com/file/d/1sy7SBjxcC6cigLgP87VX8SLH8FAio2MV/view?usp=sharing',
             image: NatureNet,
             description: 'NatureNet is a service which alerts users when dangerous animals are spotted \
             using computer vision technology. For my capstone project, we trained a computer \
