@@ -53,8 +53,9 @@ function AboutMe() {
                 />
                 <Box sx={{ margin: 4 }}>
                     <Typography variant='h5' sx={{ fontWeight: '500', marginBottom: 3 }}>Jaejin Cha | Software Engineer</Typography>
-                    <Typography variant='h6' sx={{ marginBottom: 1 }}>I&apos;m focusing on Machine Learning, Robotics, and Multi-agent System.</Typography>
-                    <Typography variant='h6'>Master's in Computer Science @ Texas A&M University, researching in Multi-Robot Systems</Typography>
+                    <Typography variant='h6' sx={{ marginBottom: 1 }}>I'm focusing on Machine Learning, Robotics, and Multi-agent System.</Typography>
+                    <Typography variant='h6'>Master of Science in Computer Science @ Texas A&M University, researching in Multi-Robot Systems</Typography>
+	    	    <Typography variant='h6'>Developing an Autuonomous Driving model to future-proof underserved communities.</Typography>
                 </Box>
             </Box>
             <Box sx={{ marginTop: 20 }}>
