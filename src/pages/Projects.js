@@ -6,7 +6,17 @@ import Kung_Fu_Tea from '../assets/kung_fu_tea.jpeg'
 
 function Projects() {
     const proj = [
-        {
+	{
+	    title: 'RL-library',
+	    period: 'Oct 2024 - Present',
+	    tools: 'Python, PyTorch, PyGame, Numpy',
+	    link: 'https://github.com/jaejin0/rl-library',
+	    image: NatureNet,
+	    description: This project is to gain hands-on experience in Reinforcement Learning and Multi-agent Reinforcement Learning\
+	    by implementing a set of reusable classes of various reinforcement learning algorithms and Markov decision process environments.\
+	    This project is simply a collection of reinforcement learning algorithms.
+	}
+	{
             title: 'NatureNet',
             period: 'Jan 2024 - May 2024',
             tool: 'Python, Flask, PyTorch, OpenCV, JavaScript, React, Express, Roboflow',
