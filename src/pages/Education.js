@@ -12,11 +12,11 @@ function Education() {
             period: 'Aug 2024 - May 2026',
             image: tamu,
             description: 'I am pursuing a master\s program in computer science, after \
-            developing a strong interest in AI and robotics while researching autonomous \
-            driving. My studies focus on AI robotics research, allowing me to delve \
+            developing a strong interest in Artificial Intelligence, especially in Physical AI while researching autonomous \
+            driving at Connected and Autonomous Research Laboratory (CAR Lab) at University of Delaware through REU program. Currently, my study focuses on Multi-robot System research, allowing me to delve \
             deeply into these cutting-edge areas. Alongside this specialization, I am \
-            also developing a broad knowledge across the entire field of computer science,\
-            ensuring a well-rounded understanding of various sub-disciplines.',
+            also developing skills in Autonomous Driving and Machine Learning as I'm interning at Endeavr Institute as a Software Engineer,\
+	    developing an end-to-end autonomous driving system to future-proof underserved communities.',
             coursework : [
                 'CSCE 752 Robotics and Spatial Intelligence',
                 'CSCE 631 Intelligent Agent',
