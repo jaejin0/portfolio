@@ -15,7 +15,7 @@ function Education() {
             developing a strong interest in Artificial Intelligence, especially in Physical AI while researching autonomous \
             driving at Connected and Autonomous Research Laboratory (CAR Lab) at University of Delaware through REU program. Currently, my study focuses on Multi-robot System research, allowing me to delve \
             deeply into these cutting-edge areas. Alongside this specialization, I am \
-            also developing skills in Autonomous Driving and Machine Learning as I'm interning at Endeavr Institute as a Software Engineer,\
+            also developing skills in Autonomous Driving and Machine Learning as I\'m interning at Endeavr Institute as a Software Engineer,\
 	    developing an end-to-end autonomous driving system to future-proof underserved communities.',
             coursework : [
                 'CSCE 752 Robotics and Spatial Intelligence',
