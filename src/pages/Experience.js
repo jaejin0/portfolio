@@ -1,5 +1,8 @@
 import { Container, Card, Box, Typography, Stack, Divider, Grid, Link } from "@mui/material";
 
+import hpe from '../assets/hpe.jpeg'
+import aimahead from '../assets/aimahead.jpeg'
+import endeavr from '../assets/endeavr.jpeg'
 import reu_intern from '../assets/reu_intern.jpeg'
 import AggieResearch from '../assets/Aggie_Research_Program.jpeg'
 
@@ -9,26 +12,33 @@ import AggieCodingClub from '../assets/Aggie_Coding_Club.jpeg'
 function Experience() {
     const exp = [
 	{
+	    title: 'Software Engineer Intern @ Hewlett Packard Enterprise',
+	    period: 'May 2025 - Present',
+	    tool: 'Oracle APEX, MCP',
+	    link: 'https://www.hpe.com/us/en/home.html',
+	    image: hpe,
+	    description: 'I engineered a Retrieval-Augmented Generation (RAG) pipeline from the ground up in Pl/SQL, \
+			building a custom vector database and vector search layer to extended Oracle 19c capabilities, integrated LLMs with RESTful APIs.\
+			I developed an AI-powered user guide chatbot in Oracle APEX with chat log storage, session management, and seamless integration, improving user experience and knowledge accessibility.\
+			I design and implement MCP (Model Context Protocol) server and client for internal business apps, enabling AI agents to analyze operational data, generate predictions, and provide actionable insights to improve productivity.'
+	},
+	{
+	    title: 'Research Assistant @ NIH AIM-AHEAD (Texas A&M, Georgia Tech, Emory University)',
+	    period: 'Feb 2025 - Present',
+	    tool: 'Python, Jupyter Notebook, SQL',
+	    link: 'https://www.aim-ahead.net/',
+	    image: aimahead,
+	    description: 'I conducted data processing and machine learning on large-scale cardiovascular datasets to develop AFT model.\
+			I produced statistical analysis in a high-impact academic research setting involving cross-disciplinary collaboration.'
+	},
+	{
 	    title: 'Software Engineer Intern @ Endeavr Institute',
 	    period: 'Oct 2024 - Present',
 	    tool: 'Python, PyTorch, ROS, CARLA',
 	    link: 'https://endeavr.city/',
-	    image: 'https://teamup.org/wp-content/uploads/2024/02/appsforgood_long.png',
-	    description: 'Developed an end-to-end autonomous driving frameworks to future-proof underserved communities.'
+	    image: endeavr,
+		description: 'I developed an end-to-end autonomous driving frameworks to future-proof underserved communities.'
 	},
-	{
-            title: 'Software Engineer Intern @ TeamUp',
-            period: 'May 2024 - Aug 2024',
-            tool: 'Java, Spring Boot, TypeScript, Next.js',
-            link: 'https://teamup.org/apps-for-good/',
-            image: 'https://teamup.org/wp-content/uploads/2024/02/appsforgood_long.png',
-            description: 'In my software engineering role, I developed robust and scalable\
-            RESTful APIs and microservices for the backend with Spring Boot. I also design and implement dynamic, \
-            responsive user interfaces using Next.js and TypeScript. Additionally, I \
-            actively participate in Agile Scrum ceremonies, including sprint planning, \
-            daily stand-ups, and retrospectives, ensuring effective collaboration and \
-            continuous improvement within the team.'
-        },
         {
             title: 'REU Research Intern @ University of Delaware',
             period: 'May 2023 - Aug 2023',

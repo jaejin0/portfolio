@@ -12,16 +12,19 @@ import jaejin6 from '../assets/jaejin6.jpeg'
 import jaejin7 from '../assets/jaejin7.jpeg'
 import jaejin8 from '../assets/jaejin8.jpeg'
 import jaejin9 from '../assets/jaejin9.jpeg'
+import jaejin10 from '../assets/jaejin10.jpeg'
+import jaejin11 from '../assets/jaejin11.jpeg'
+import jaejin12 from '../assets/jaejin12.jpeg'
 
 function AboutMe() {
-    const progLangProf = ['Python', 'Java', 'JavaScript', 'C++']
-    const progLangComp = ['Ruby', 'TypeScript', 'C#']
-    const frameworkProf = ['Spring Boot', 'Django', 'Express', 'NodeJS', 'React']
-    const frameworkComp = ['Flask', 'Rails', 'PyTorch', 'ROS', 'Vue']
-    const developerTools = ['Git', 'Linux', 'AWS', 'Docker']
+    const progLangProf = ['Python', 'SQL', 'PL/SQL', 'Java', 'JavaScript', 'C++']
+    const progLangComp = ['Ruby', 'TypeScript', 'C', 'C#']
+    const frameworkProf = ['PyTorch', 'LangChain', 'MCP', 'Oracle APEX', 'OpenCV', 'ROS', 'React']
+    const frameworkComp = ['Flask', 'Ruby on Rails', 'Express', 'Django', 'Spring Boot', 'Vue']
+    const developerTools = ['Git', 'GitHub', 'Linux', 'Vim', 'Docker', 'Jupyter Notebook', 'AWS', 'Jira']
     const developerToolsHalf = Math.ceil(developerTools.length / 2)
 
-    const itemData = [jaejin1, jaejin2, jaejin3, jaejin4, jaejin5, jaejin6, jaejin7, jaejin8, jaejin9]
+    const itemData = [jaejin1, jaejin2, jaejin3, jaejin4, jaejin5, jaejin6, jaejin7, jaejin8, jaejin9, jaejin10, jaejin11, jaejin12]
     const valueList = ['Hard working', 'Passionate', 'Creative', 'Dedicated'];
     const colorList = ['#4285F4', '#34A853', '#FBBC05', '#EA4335'];
     const [index, setIndex] = useState(0);
@@ -87,11 +90,12 @@ function AboutMe() {
                 />
                 <Box sx={{ margin: 4 }}>
                     <Typography variant='h5' sx={{ fontWeight: '500', marginBottom: 3 }}>Jaejin Cha | Software Engineer</Typography>
-                    <Typography variant='h6' sx={{ marginBottom: 1 }}>I'm focusing on Machine Learning, Robotics, and Multi-agent System.</Typography>
-                    <Typography variant='h6'>Master of Science in Computer Science @ Texas A&M University, researching in Multi-Robot Systems</Typography>
-	    	    <Typography variant='h6'>Developing an Autuonomous Driving model to future-proof underserved communities.</Typography>
-               </Box>
-            </Box>
+                    <Typography variant='h6' sx={{ marginBottom: 1 }}>Master's in Computer Science @ Texas A&M, researching in Multi-Agent Systems</Typography>
+                    <Typography variant='h6' sx={{ marginBottom: 1 }}>I'm focusing on AI agents @ HPE, working with LLMs, RAG, and MCP</Typography>
+                    <Typography variant='h6' sx={{ marginBottom: 1 }}>I also have experience in reinforcement learning, robotics, and imitation learning</Typography>
+                    <Typography variant='h6' sx={{ marginBottom: 1 }}>I bring a background in software engineering with hands-on experience in backend development, databases, and API integration</Typography>
+           		</Box>
+           	</Box>
             <Box sx={{ marginTop: 20 }}>
                 <Typography variant='h4'>Skills</Typography>
                 <Box sx={{ margin: 4 }}>

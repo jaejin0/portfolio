@@ -1,7 +1,7 @@
 import { Box, Card, Container, Typography, Stack, Divider, Accordion, AccordionSummary, AccordionDetails, Grid } from "@mui/material";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-import tamu from '../assets/tamu.jpeg'
+import tamu from '../assets/tamu_image.jpeg'
 import gradImage from '../assets/graduation_Alma_Mater.jpeg'
 
 function Education() {
@@ -19,10 +19,14 @@ function Education() {
 	    developing an end-to-end autonomous driving system to future-proof underserved communities.',
             coursework : [
                 'CSCE 752 Robotics and Spatial Intelligence',
+                'CSCE 691 Research',
+				'CSCE 643 Seminar in Intelligent Systems and Robotics',
                 'CSCE 631 Intelligent Agent',
             ],
             otherCoursework : [
-                'CSCE 689 Multi-agent Reinforcement Learning',
+                'CSCE 689 Multi-Agent Reinforcement Learning',
+                'CSCE 689 Multi-Robot Systems',
+				'CSCE 635 AI Robotics',
             ],
         },
         {
