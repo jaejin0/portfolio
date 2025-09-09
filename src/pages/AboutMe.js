@@ -14,37 +14,71 @@ import jaejin8 from '../assets/jaejin8.jpeg'
 import jaejin9 from '../assets/jaejin9.jpeg'
 
 function AboutMe() {
-    const title = ['master\'s student', 'software engineer', 'AI agent researcher']
-    const programmingLanguages = ['Python', 'C++', 'JavaScript', 'Ruby']
-    const frameworks = ['PyTorch', 'ROS', 'React.js', 'Rails', 'Express.js', 'Vue.js']
-    const developerTools = ['Git', 'GitHub', 'Vim', 'Linux', 'Jira']
-    const hobbies = ['work-out', 'cooking', 'watching UFC', 'listening to Podcast']
-    const professionalInterest = ['autonomous vehicle', 'multi-robots', 'reinforcement learning', 'data pipeline']
-    const externalLinks = [
-        'https://github.com/jaejin0',
-        'https://www.linkedin.com/in/jaejincha/',
-        // Youtube,
-	// Medium,
-    ]
-    const phone_number = '832-745-9922'
-    const email = 'jaejin0109@gmail.com'
-    // resume = 'link' or pdf path
-    const residency = 'Houston, TX, USA'
-    const citizenship = 'permanent resident of United States, citizen of South Korea'
-
-    // paragraphs
-    const whoAmI = "breif introduction about myself. How I will introduce myself during career fair"
-    const whyThis = "breif explanation about why I am doing the {professionalInterest}"
-    
-    // website theme = black, #FABAoA, #fee2c8
-    
-    
+    const progLangProf = ['Python', 'Java', 'JavaScript', 'C++']
+    const progLangComp = ['Ruby', 'TypeScript', 'C#']
+    const frameworkProf = ['Spring Boot', 'Django', 'Express', 'NodeJS', 'React']
+    const frameworkComp = ['Flask', 'Rails', 'PyTorch', 'ROS', 'Vue']
+    const developerTools = ['Git', 'Linux', 'AWS', 'Docker']
+    const developerToolsHalf = Math.ceil(developerTools.length / 2)
 
     const itemData = [jaejin1, jaejin2, jaejin3, jaejin4, jaejin5, jaejin6, jaejin7, jaejin8, jaejin9]
+    const valueList = ['Hard working', 'Passionate', 'Creative', 'Dedicated'];
+    const colorList = ['#4285F4', '#34A853', '#FBBC05', '#EA4335'];
+    const [index, setIndex] = useState(0);
+    const [checked, setChecked] = useState(true);
 
+    let time
+    function timer() {
+        time = setTimeout(() => {
+            setTimeout(() => { // appear
+                setChecked(true)
+            }, 0)
+            setTimeout(() => { // disappear
+                setChecked(false)
+            }, 3000)
+            setTimeout(() => {
+                if (index !== valueList.length - 1) {
+                    setIndex(index + 1);
+                }
+                else {
+                    setIndex(0);
+                }
+            }, 3200)
+        }, 3500);
+    };
+    useEffect(() => {
+        clearTimeout(time)
+        timer();
+    }, [index]);
+    
     return (
         <Container maxWidth='md'>
-	    <Box sx={{ marginTop: 20 }}>
+            <Card
+                variant="outlined"
+                sx={{
+                    display: 'flex',
+                    flexWrap: 'wrap',
+                    flexDirection: 'row',
+                    justifyContent: 'space-between',
+                    alignItems: "center",
+                    gap: 2,
+                    marginTop: 20,
+                    marginLeft: 'auto',
+                    marginRight: 'auto',
+                    padding: 8,
+                }}
+            >
+                <Typography variant='h3' sx={{ marginLeft: '18px' }}>I'm a </Typography>
+                <Grow
+                    in={checked}
+                    style={{ transformOrigin: '0 0 0' }}
+                    {...(checked ? { timeout: 1000 } : {})}
+                >
+                    <Typography variant='h3' color={colorList[index]} sx={{ marginX: 'auto' }}>{valueList[index]}</Typography>
+                </Grow>
+                <Typography variant='h3' sx={{ marginRight: '18px' }}>developer</Typography>
+            </Card>
+            <Box sx={{ marginTop: 20 }}>
                 <Typography variant='h4'>Profile</Typography>
                 <Avatar
                     alt="Jaejin Cha"
@@ -56,7 +90,7 @@ function AboutMe() {
                     <Typography variant='h6' sx={{ marginBottom: 1 }}>I'm focusing on Machine Learning, Robotics, and Multi-agent System.</Typography>
                     <Typography variant='h6'>Master of Science in Computer Science @ Texas A&M University, researching in Multi-Robot Systems</Typography>
 	    	    <Typography variant='h6'>Developing an Autuonomous Driving model to future-proof underserved communities.</Typography>
-                </Box>
+               </Box>
             </Box>
             <Box sx={{ marginTop: 20 }}>
                 <Typography variant='h4'>Skills</Typography>
@@ -64,19 +98,22 @@ function AboutMe() {
                     <Card sx={{ margin: 2, padding: 3 }}>
                         <Typography variant='h6' sx={{ marginBottom: 1 }}>Languages:</Typography>
                         <Box sx={{ display: 'flex', justifyContent: 'space-around'}}>
-                            <Skills list={programmingLanguages}></Skills>
+                            <Skills title='proficient' list={progLangProf}></Skills>
+                            <Skills title='competent' list={progLangComp}></Skills>
                         </Box>
                     </Card>
                     <Card sx={{ margin: 2, padding: 3 }}>
                         <Typography variant='h6' sx={{ marginBottom: 1 }}>Frameworks:</Typography>
                         <Box sx={{ display: 'flex', justifyContent: 'space-around'}}>
-                            <Skills list={frameworks}></Skills>
+                            <Skills title='proficient' list={frameworkProf}></Skills>
+                            <Skills title='competent' list={frameworkComp}></Skills>
                         </Box>
                     </Card>
                     <Card sx={{ margin: 2, padding: 3 }}>
                         <Typography variant='h6'>Developer Tools:</Typography>
                         <Box sx={{ display: 'flex', justifyContent: 'space-around'}}>
-                            <Skills list={developerTools}></Skills>
+                            <Skills list={developerTools.slice(0, developerToolsHalf)}></Skills>
+                            <Skills list={developerTools.slice(developerToolsHalf, )}></Skills>
                         </Box>
                     </Card>
                 </Box>
@@ -117,9 +154,12 @@ function AboutMe() {
 }
 
 function Skills(props) {
+    const title = props.title
     const list = props.list
+    console.log(title)
     return (
         <Box marginY={1}>
+            {title !== undefined && <Typography variant='h6'>({title})</Typography>}
             {list.map((index) => (
                 <Box key={index.id}>
                     <Typography variant='h6' marginY={1}>{index}</Typography>
