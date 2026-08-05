@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.fa34343c.css",
-    "main.js": "/portfolio/static/js/main.bf69336b.js",
+    "main.js": "/portfolio/static/js/main.1e4ae24e.js",
     "static/js/453.5d79306b.chunk.js": "/portfolio/static/js/453.5d79306b.chunk.js",
     "static/media/graduation_Alma_Mater.jpeg": "/portfolio/static/media/graduation_Alma_Mater.36132e6d9cd4681cf2d0.jpeg",
     "static/media/jaejin.jpeg": "/portfolio/static/media/jaejin.f52f562776fc88e3ff1f.jpeg",
@@ -14,16 +14,17 @@
     "static/media/jaejin9.jpeg": "/portfolio/static/media/jaejin9.1497f58338a17faa3b96.jpeg",
     "static/media/jaejin1.jpeg": "/portfolio/static/media/jaejin1.bc824d87ebeef0ea20b8.jpeg",
     "static/media/University_Of_Delaware.jpeg": "/portfolio/static/media/University_Of_Delaware.54397637823169956f8a.jpeg",
+    "static/media/arkisys.jpeg": "/portfolio/static/media/arkisys.28a47d3f6678c5f6c523.jpeg",
     "static/media/aimahead.jpeg": "/portfolio/static/media/aimahead.1fbe40fb640dc577fa84.jpeg",
     "static/media/HPE.png": "/portfolio/static/media/HPE.fd0804973730ecc9fce9.png",
     "static/media/Texas_A&M.svg": "/portfolio/static/media/Texas_A&M.2235d149621fd443da21536f41e137ce.svg",
     "index.html": "/portfolio/index.html",
     "main.fa34343c.css.map": "/portfolio/static/css/main.fa34343c.css.map",
-    "main.bf69336b.js.map": "/portfolio/static/js/main.bf69336b.js.map",
+    "main.1e4ae24e.js.map": "/portfolio/static/js/main.1e4ae24e.js.map",
     "453.5d79306b.chunk.js.map": "/portfolio/static/js/453.5d79306b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fa34343c.css",
-    "static/js/main.bf69336b.js"
+    "static/js/main.1e4ae24e.js"
   ]
 }
